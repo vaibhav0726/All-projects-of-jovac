@@ -1,0 +1,241 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+/* animation css */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@700&display=swap");
+@font-face {
+    font-family: 'Booter - Zero Zero';
+    src: url("./fonts/Booter\ -\ Zero\ Zero.woff") format('woff'), url("./fonts/Booter\ -\ Zero\ Zero.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.Animatecontainer {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to top right, rgb(201, 57, 57), pink, rgb(0, 255, 0));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.abox {
+  width: 100px;
+  height: 100px;
+  border: 10px solid rgb(223, 29, 29);
+  border-top: 10px solid white;
+  border-radius: 50%;
+  animation: loader 1.5s linear infinite;
+}
+
+.Animatecontainer p {
+  text-transform: uppercase;
+  color: white;
+  margin-top: 20px;
+  font-family: "Bebas Neue", cursive;
+  font-size: 30px;
+  letter-spacing: 5px;
+  animation: flash 1.5s linear;
+  transition: 1s;
+}
+span {
+  font-size: 50px;
+}
+
+@keyframes loader {
+  0% {
+    transform: none translateY(0px);
+  }
+
+  100% {
+    transform: rotate(360deg) translateY(10px);
+  }
+}
+
+@keyframes flash {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+/* template css */
+
+  
+  .container {
+    display: none;
+  }
+  #header {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(62, 88, 158);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+  }
+  #logo {
+    width: 70px;
+    height: 70px;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    transition: 0.5s;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    transition: 0.5s;
+  }
+  nav ul li a:hover {
+    background-color: white;
+    color: black;
+  }
+  .banner {
+    margin-top: 20px;
+    width: 100%;
+    height: 100vh;   
+    background: #59c173; 
+    background: -webkit-linear-gradient(
+      to right,
+      #52c126,
+      #6931d1,
+      #e01111
+    );
+    background: linear-gradient(
+      to right,
+      #52c126,
+      #6931d1,
+      #e01111
+    );
+  
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    line-height: 100vh;
+  }
+  #sec-1 {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  #sec-1 .circles {
+    width: 250px;
+    height: 250px;
+    background-color: burlywood;
+    border-radius: 50%;
+    margin: 20px;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  h2 {
+    text-align: center;
+    margin: 20px 0px;
+    font-size: 60px;
+    font-family: "Booter - Zero Zero";
+  }
+  #sec-2 {
+    display: flex;
+    justify-content: space-between;
+  }
+  #sec-2 main {
+    width: 50%;
+    height: 500px;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+  }
+  aside {
+    width: 48%;
+    height: 500px;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  aside .art {
+    width: 100%;
+    height: 150px;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+  }
+  
+  #sec-3 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+  }
+  
+  #sec-3 .box {
+    width: 20%;
+    height: 300px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    transition: 1s;
+  }
+  
+  footer {
+    width: 100%;
+    height: 100px;
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+  }
+  
+  #sec-3 .box:hover {
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 5px 5px 10px grey;
+    background-color: #2c21c5;
+    transform: scale(1.1);  
+  }
+  .fa-cloud-download {
+    color: #3498db;
+    font-size: 50px;
+    position: fixed;
+    top: 300px;
+    right: 20px;
+  }
