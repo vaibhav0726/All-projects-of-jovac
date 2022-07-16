@@ -60,13 +60,22 @@ function setWelcome() {
 
 function getName() {
     const MyName = prompt("Enter your name:-");
-    // setName(MyName);
-    // console.log(MyName);
   if (localStorage.getItem("myData") === null) {
-    // name.innerHTML = "[Enter Name]";
-    name.innerHTML = MyName;
+    if(MyName===''){
+      name.innerHTML = "[Enter Name]";
+    }
+    else{
+      name.innerHTML = MyName;
+    }
+      
   } else {
-    name.innerHTML = localStorage.getItem("myData");
+    // name.innerHTML = localStorage.getItem("myData");
+    if(MyName===''){
+      name.innerHTML = "[Enter Name]";
+    }
+    else{
+      name.innerHTML = MyName;
+    }
   }
 }
 
